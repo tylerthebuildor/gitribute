@@ -14,7 +14,7 @@
             if (request.status === 200) {
               resolve(JSON.parse(request.responseText));
             } else {
-              reject(`Error: ${request.status}`);
+              resolve(`Error: ${request.status}`);
             }
           }
         };
@@ -56,7 +56,7 @@
     repos.forEach(function(repo, repoIndex) {
       searchRepoFiles('// TODO:', repo.full_name)
         .then(function(files) {
-          if (files.items)
+          if (files.items && files.items.length)
             filesInRepos.push(files.items);
           if (repoIndex === repos.length - 1)
             render({ filesInRepos });
