@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet">
+    <title>Gitribute</title>
+  </head>
+  <body>
+
+    <!-- Container -->
+    <div class="container">
+
+      <!-- Header -->
+      <header>
+        <h1>
+          <strong>Gitribute</strong>
+          <a class="social-link" href="https://github.com/tylerbuchea/gitribute" target="_blank">
+            <img alt="Github Repository Link" class="social-icon" src="github.svg" />
+          </a>
+          <a class="social-link" href="https://twitter.com/share?url=http%3A%2F%2Ftylerbuchea.com%2Fgitribute&via=tylerbuchea&hashtags=gitribute%2Cgithub%2Ccontribute%2Copensource&text=Search%20Github%20repositories%20for%20TODO%20comments" target="_blank">
+            <img alt="Twitter Share Button" class="social-icon" src="twitter.svg" />
+          </a>
+        </h1>
+        <h2>
+          Search Github repositories for <strong>TODO</strong> comments.
+        </h2>
+        <textarea
+          name="search"
+          placeholder="jquery/jquery"
+        ></textarea>
+      </header>
+
+      <!-- Content -->
+      <section class="content">
+        <ul id="app"></ul>
+      </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-59245528-1');ga('send','pageview');
+    </script>
+
+  </body>
+</html>
